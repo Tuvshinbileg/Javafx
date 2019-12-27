@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="379.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="epm.controllers.ManageLeaveCtrl">
+    <children>
+        <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #1E3888;">
+            <children>
+                <Label layoutX="255.0" layoutY="36.0" text="MANAGE LEAVE" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="188.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../Images/icons8_leave_127px_1.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="closeBtn" fitHeight="25.0" fitWidth="25.0" layoutX="566.0" layoutY="8.0" onMouseClicked="#onClickClosebtn" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../Images/icons8_close_window_127px.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="125.0" prefWidth="600.0" vgap="20.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="25.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="398.0" minWidth="10.0" prefWidth="80.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label alignment="BOTTOM_RIGHT" text="Leave Date" textFill="#1e3888">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font></Label>
+                <Label alignment="BOTTOM_RIGHT" text="Reason" textFill="#1e3888" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font></Label>
+                <Label alignment="BOTTOM_RIGHT" text="Total Leave" textFill="#1e3888" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font></Label>
+                <JFXDatePicker fx:id="dpLeavedate" defaultColor="#1e3888" prefHeight="26.0" prefWidth="167.0" GridPane.columnIndex="1">
+                    <GridPane.margin>
+                        <Insets bottom="20.0" />
+                    </GridPane.margin></JFXDatePicker>
+                <JFXTextField fx:id="txtTotal" maxWidth="-Infinity" prefHeight="25.0" prefWidth="131.0" promptText="Total leave Hour" style="-fx-promt-text-fill: #a1a1a1;" unFocusColor="#a1a1a1" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets bottom="20.0" />
+                    </GridPane.margin>
+                </JFXTextField>
+                <TextArea fx:id="txtReason" maxWidth="-Infinity" prefHeight="49.0" prefWidth="133.0" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.rowSpan="3">
+                    <GridPane.margin>
+                        <Insets top="10.0" />
+                    </GridPane.margin>
+                </TextArea>
+                <Label alignment="BOTTOM_RIGHT" text="Remaining Leave" textFill="#1e3888" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="txtRemaining" maxWidth="-Infinity" prefHeight="25.0" prefWidth="131.0" promptText="Remaining Hour" style="-fx-promt-text-fill: #a1a1a1;" unFocusColor="#a1a1a1" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets bottom="20.0" />
+                    </GridPane.margin>
+                </JFXTextField>
+            </children>
+            <VBox.margin>
+                <Insets bottom="25.0" left="100.0" />
+            </VBox.margin>
+            <padding>
+                <Insets left="20.0" top="10.0" />
+            </padding>
+        </GridPane>
+        <HBox alignment="CENTER" prefHeight="89.0" prefWidth="600.0" spacing="20.0">
+            <children>
+                <JFXButton onAction="#onManageLeave" prefHeight="33.0" prefWidth="120.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10,0,0,1);" text="Manage Leave">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </HBox>
+    </children>
+</VBox>

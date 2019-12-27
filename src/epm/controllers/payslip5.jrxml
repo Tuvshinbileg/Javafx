@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="payslip1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="45c7ac04-37d4-4460-a12e-9aebeba4ff02">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Data.xml"/>
+	<queryString language="SQL">
+		<![CDATA[Select * from employeeInfo
+join payslip on employeeInfo.empcode= payslip.EmpId]]>
+	</queryString>
+	<field name="empcode" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="empcode"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="lastname" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="lastname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="firstname" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="firstname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="gender" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="gender"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="address" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="contactno" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="contactno"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="dateofbirth" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="dateofbirth"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="city" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="city"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="emailid" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="emailid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="department" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="department"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="designation" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="designation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="hourlySalary" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="hourlySalary"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="doj" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="doj"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="bank_acc_no" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="bank_acc_no"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="pincode" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="pincode"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="password" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="password"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="usertype" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="usertype"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="username" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="username"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="EmployeeInfo"/>
+	</field>
+	<field name="Slno" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Slno"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payslip"/>
+	</field>
+	<field name="Empid" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Empid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payslip"/>
+	</field>
+	<field name="Name" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payslip"/>
+	</field>
+	<field name="Department" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Department"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payslip"/>
+	</field>
+	<field name="Designation" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Designation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payslip"/>
+	</field>
+	<field name="LossOfPay" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="LossOfPay"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payslip"/>
+	</field>
+	<field name="Netsal" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Netsal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payslip"/>
+	</field>
+	<field name="Paydate" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Paydate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="Payslip"/>
+	</field>
+	<group name="lastname">
+		<groupExpression><![CDATA[$F{lastname}]]></groupExpression>
+	</group>
+	<group name="firstname">
+		<groupExpression><![CDATA[$F{firstname}]]></groupExpression>
+	</group>
+	<group name="gender">
+		<groupExpression><![CDATA[$F{gender}]]></groupExpression>
+	</group>
+	<group name="address">
+		<groupExpression><![CDATA[$F{address}]]></groupExpression>
+	</group>
+	<group name="contactno">
+		<groupExpression><![CDATA[$F{contactno}]]></groupExpression>
+	</group>
+	<group name="dateofbirth">
+		<groupExpression><![CDATA[$F{dateofbirth}]]></groupExpression>
+	</group>
+	<group name="city">
+		<groupExpression><![CDATA[$F{city}]]></groupExpression>
+	</group>
+	<group name="emailid">
+		<groupExpression><![CDATA[$F{emailid}]]></groupExpression>
+	</group>
+	<group name="hourlySalary">
+		<groupExpression><![CDATA[$F{hourlySalary}]]></groupExpression>
+	</group>
+	<group name="doj">
+		<groupExpression><![CDATA[$F{doj}]]></groupExpression>
+	</group>
+	<group name="bank_acc_no">
+		<groupExpression><![CDATA[$F{bank_acc_no}]]></groupExpression>
+	</group>
+	<group name="pincode">
+		<groupExpression><![CDATA[$F{pincode}]]></groupExpression>
+	</group>
+	<group name="pasword">
+		<groupExpression><![CDATA[$F{pasword}]]></groupExpression>
+	</group>
+	<group name="Slno">
+		<groupExpression><![CDATA[$F{Slno}]]></groupExpression>
+	</group>
+	<group name="Empid">
+		<groupExpression><![CDATA[$F{Empid}]]></groupExpression>
+	</group>
+	<group name="Name">
+		<groupExpression><![CDATA[$F{Name}]]></groupExpression>
+	</group>
+	<group name="Department">
+		<groupExpression><![CDATA[$F{Department}]]></groupExpression>
+	</group>
+	<group name="Designation">
+		<groupExpression><![CDATA[$F{Designation}]]></groupExpression>
+	</group>
+	<group name="LossOfPay">
+		<groupExpression><![CDATA[$F{LossOfPay}]]></groupExpression>
+	</group>
+	<group name="Netsal">
+		<groupExpression><![CDATA[$F{Netsal}]]></groupExpression>
+	</group>
+	<group name="Paydate">
+		<groupExpression><![CDATA[$F{Paydate}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="242" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image>
+				<reportElement x="-20" y="-20" width="595" height="262" uuid="51c15f8c-515c-4f69-96b4-52d5844246df"/>
+				<imageExpression><![CDATA["/home/tuvshinbileg/IdeaProjects/EPM_UI/head.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="9" y="105" width="60" height="28" forecolor="#FFFFFF" uuid="0053b947-788e-4503-a983-5c7b3da2591f"/>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="12"/>
+				</textElement>
+				<text><![CDATA[Printed:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="69" y="105" width="100" height="28" forecolor="#FFFFFF" uuid="6b1caab3-1e41-40d1-8c07-4c7e4e68dbc4">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[NOW()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="387" y="8" width="176" height="30" forecolor="#FFE600" uuid="24e265c6-7bf0-4de1-8c43-00c1c5e52746"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SALARY REPORT]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="280" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="30" y="-44" width="90" height="20" forecolor="#1E3888" uuid="39151624-9589-4bc0-bd6d-cad24ece2b9a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Employee ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="-4" width="90" height="20" forecolor="#1E3888" uuid="08229da5-2c5d-4c23-9268-123822038a11">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FIRST NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="-44" width="120" height="20" forecolor="#1E3888" uuid="069ad2e0-5c95-4abb-a111-0d6abb7bffeb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DEPARTMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="-4" width="130" height="20" forecolor="#1E3888" uuid="1d87debb-d22f-424b-9d84-5adea5b1eb3c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESIGNATION]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="-4" width="100" height="20" uuid="76035f27-0bde-4134-bd48-7121b6021cd6">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firstname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="-44" width="120" height="20" uuid="0652fe77-32c3-4b2f-90f5-984ca1ee1dd5">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{department}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="-4" width="120" height="20" uuid="0c9c6e61-7ec1-45a6-8d2f-859a7cde5d37">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Designation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="36" width="140" height="20" uuid="9c384f9a-76d4-420c-8439-8615434fafca">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bank_acc_no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="36" width="140" height="20" forecolor="#1E3888" uuid="97f59418-03a4-42ad-b9ac-4ee5cbb8bbc6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BANK ACCOUNT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="36" width="90" height="20" forecolor="#1E3888" uuid="d3442268-a70a-4c51-84af-20908ad9f0b3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAST NAME]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="36" width="100" height="20" uuid="081853c0-cb28-41ba-8d11-cdeb766f80ec">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lastname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="76" width="90" height="20" forecolor="#1E3888" uuid="66438bf2-e8c6-4aa1-9d4d-7e6029090c40">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ADDRESS]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="76" width="100" height="20" uuid="4e3ed12e-45c5-41b5-b904-d6411d214fd9">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="116" width="90" height="20" forecolor="#1E3888" uuid="4bcb6de3-c4d5-4257-9773-4874a1bb7105">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CITY]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="116" width="100" height="20" uuid="48253c16-d6a2-4082-9ce5-6e1d9ed11036">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{city}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="156" width="90" height="20" forecolor="#1E3888" uuid="638cfc67-cf83-4e85-a301-884ecdd3d72d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONTACT NO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="156" width="110" height="20" uuid="4904965d-9dd9-4f58-aec6-bf5bf3cb9373">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contactno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="76" width="120" height="20" forecolor="#1E3888" uuid="5380c468-d131-468c-bb7c-040cb0b0ce3a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PAY DATE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="420" y="76" width="120" height="20" uuid="3ae497a8-e5a1-451a-91e1-69809b56e4c9">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Paydate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="-44" width="100" height="20" uuid="ccdc180e-1b76-496b-beb3-828f417fe986">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana&#xD;&#xA;" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{empcode}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="5" y="207" width="545" height="1" forecolor="#1E3888" uuid="7d17334a-fbfd-4bb9-a248-f6f08e96fe77"/>
+			</rectangle>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="59" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="134" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="-102" width="120" height="20" forecolor="#1E3888" uuid="7ede52bd-feba-4dc4-b837-60332e075b18">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HOURLY SALARY]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="176" y="-102" width="150" height="20" uuid="6e87874b-8b42-4a6d-9498-168fefb2a88d">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hourlySalary}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="-62" width="120" height="20" forecolor="#1E3888" uuid="04f605e0-201b-4e7c-bd93-19a7d7a15882">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LOSS OF PAY]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="176" y="-62" width="120" height="20" uuid="717f05ac-ad42-4e81-afd3-40f5ae3f4d84">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{LossOfPay}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="-22" width="120" height="20" forecolor="#1E3888" uuid="543943d0-c015-4371-b995-f6f2ddaeeab6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NET SALARY]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="176" y="-22" width="120" height="20" uuid="e0a9ca6e-a755-4a38-9661-9ac60eea14a2">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Verdana" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Netsal}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="310" y="0" width="243" height="134" uuid="c744216c-4b81-44e1-9092-465b142e46a3"/>
+				<jr:QRCode xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<jr:codeExpression><![CDATA["https://facebook.com/timmythefabulous"]]></jr:codeExpression>
+				</jr:QRCode>
+			</componentElement>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<summary>
+		<band height="120" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+		</band>
+	</summary>
+</jasperReport>

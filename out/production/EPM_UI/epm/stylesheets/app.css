@@ -1,0 +1,128 @@
+.fn-12{
+    -fx-font-size:12px;
+}
+.fn-18{
+    -fx-font-size:18px;
+}
+.fn-32{
+    -fx-font-size:32px;
+}
+.fn-48{
+    -fx-font-size:48px;
+}
+.fn-64{
+    -fx-font-size:64px;
+}
+/*text-alignment*/
+.txt-center{
+    -fx-text-alignment:center;
+}
+.txt-justify{
+    -fx-text-alignment:justify;
+}
+/*text color*/
+.fill-light-grey{
+    -fx-fill:#9c9c9c;
+    -fx-text-fill:#9c9c9c;
+
+}
+.fill-dark{
+    -fx-fill:#4f5d55;
+}
+
+.fill-white{
+    -fx-fill:#ffffff;
+}
+/*background-colors*/
+.back-transparent{
+    -fx-background-color:transparent;
+    -fx-background-radius:0px;
+
+}
+.back-white{
+    -fx-background-color:#ffffff;
+}
+.back-light-grey{
+    -fx-background-color:#ececec;
+}
+
+.hover-hand:hover{
+    -fx-cursor:hand;
+}
+.hover-dark-grey:hover{
+    -fx-background-color:#d2d2d2;
+
+}
+.border-pane{
+      -fx-border-with:4;
+     -fx-border-base: grey;
+     -fx-border-shadow: white;
+     -fx-light-border: derive(-fx-border-base, 25%);
+     -fx-border-color: -fx-light-border -fx-border-base -fx-border-base -fx-light-border;
+     -fx-background-color: -fx-border-shadow,-fx-background;
+                -fx-background-insets: 1 0 0 1, 2;
+ }
+ .bevel-grey {
+     -fx-background-color:
+       linear-gradient(#f2f2f2, #d6d6d6),
+         linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+         linear-gradient(#dddddd 0%, #f6f6f6 50%);
+     -fx-background-radius: 8,7,6;
+     -fx-background-insets: 0,1,2;
+     -fx-text-fill: black;
+     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+ }
+.menu-item {
+  -fx-pref-width: 155px;
+  -fx-pref-height: 40px;
+  -fx-padding: 5px 16px 5px 16px;
+}
+.arrow > .arrow-button > .arrow {
+    -fx-background-color: transparent;
+}
+.myButton-img >.arrow-button{
+    -fx-background-image: url("../images/assets/leave.jpg");
+    }
+
+.simple-border{
+    -fx-border-color:#d2d2d2;
+    -fx-border-radius:5px;
+    -fx-border-insets:3px;
+    -fx-border-width:3px;
+}
+
+.table-view {
+    -fx-background-color:#00FFFF;
+    -fx-background-radius:5;
+    -fx-text-fill:white;
+}
+.table-view .column-header-background{
+    -fx-background-color:#1E3888;
+    -fx-background-radius:10;
+    -fx-background-insets:0 0 10 0;
+    -fx-padding:0  0 10 0;
+    -fx-effect:dropshadow(two-pass-box,rgb(10,101,107),15,0.0,0.1,3);
+}
+.table-row-cell{
+    -fx-background-color:transparent;
+    -fx-text-fill:white;
+
+}
+.table-view .cell{
+ -fx-text-fill: #1E3888;
+  -fx-alignment: CENTER_LEFT;
+   -fx-cell-size: 32;
+
+}
+
+.table-view .column-header, .table-view .filler{
+   -fx-size:40;
+   -fx-border-width:0 0 10 0;
+   -fx-background-color:transparent;
+}
+.table-view .column-header .label{
+-fx-text-fill:white;
+}
+
+
+

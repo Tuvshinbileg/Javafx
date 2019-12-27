@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="epm.controllers.PayslipController">
+    <children>
+        <Pane prefHeight="100.0" prefWidth="765.0" style="-fx-background-color: #1E3888;">
+            <children>
+                <Label layoutX="370.0" layoutY="35.0" text="PAYSLIP" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="onClosebtn" fitHeight="25.0" fitWidth="25.0" layoutX="732.0" layoutY="7.0" onMouseClicked="#onClickClose" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/icons8_close_window_127px.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="301.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/icons8_purchase_order_127px_1.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <HBox alignment="CENTER" prefHeight="66.0" prefWidth="600.0" spacing="15.0">
+            <children>
+                <Label text="From" textFill="#1e3888">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font></Label>
+                <JFXDatePicker fx:id="dpFromdate" maxWidth="-Infinity" prefWidth="152.0" />
+                <Label text="To" textFill="#1e3888">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font></Label>
+                <JFXDatePicker fx:id="dpTodate" prefHeight="26.0" prefWidth="152.0" />
+            </children>
+        </HBox>
+        <TableView fx:id="mTable" maxWidth="-Infinity" prefHeight="200.0" prefWidth="764.0" stylesheets="@../stylesheets/app.css">
+            <columns>
+                <TableColumn fx:id="colSno" prefWidth="47.0" text="SNO" />
+                <TableColumn fx:id="colEmpid" prefWidth="71.0" text="EMPID" />
+                <TableColumn fx:id="colName" text="NAME" />
+                <TableColumn fx:id="colDepartment" prefWidth="105.0" text="Department" />
+                <TableColumn fx:id="colDesignation" prefWidth="107.0" text="Designation" />
+                <TableColumn fx:id="colLossPay" prefWidth="132.0" text="Loss of Pay" />
+                <TableColumn fx:id="colNetsalary" prefWidth="95.0" text="Net salary" />
+                <TableColumn fx:id="colPayDate" prefWidth="95.0" text="Pay date" />
+            </columns>
+            <VBox.margin>
+                <Insets left="20.0" right="10.0" top="20.0" />
+            </VBox.margin>
+        </TableView>
+        <HBox alignment="CENTER" prefHeight="70.0" prefWidth="765.0" spacing="20.0">
+            <children>
+                <JFXButton onAction="#onGenerate" prefHeight="33.0" prefWidth="120.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10,0,0,1);" text="Generate">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </HBox>
+    </children>
+</VBox>

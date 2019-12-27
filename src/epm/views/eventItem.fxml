@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="epm.controllers.EventItemCtrl">
+    <children>
+        <Pane prefHeight="100.0" prefWidth="124.0" style="-fx-background-color: #00A8E8;">
+            <children>
+                <Label fx:id="eventDay" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="9.0" prefHeight="42.0" prefWidth="50.0" text="06" textFill="WHITE">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+                <Label fx:id="eventMonth" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="41.0" prefHeight="50.0" prefWidth="65.0" text="JAN" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="28.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane prefHeight="100.0" prefWidth="329.0" style="-fx-background-color: white;">
+            <children>
+                <VBox prefHeight="99.0" prefWidth="315.0">
+                    <children>
+                        <Label fx:id="eventName" alignment="BOTTOM_LEFT" contentDisplay="CENTER" prefHeight="40.0" prefWidth="254.0" text="Queens Of The Stone" textFill="#3d3d43">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </Label>
+                        <HBox prefHeight="34.0" prefWidth="254.0">
+                            <children>
+                                <Label contentDisplay="CENTER" prefHeight="34.0" prefWidth="100.0" text="Location @" textFill="#979797">
+                                    <padding>
+                                        <Insets left="20.0" />
+                                    </padding>
+                                </Label>
+                                <Label fx:id="eventLocation" contentDisplay="CENTER" prefHeight="34.0" prefWidth="137.0" text="Production Company" textFill="#979797" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+    </children>
+</HBox>

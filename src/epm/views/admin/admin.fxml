@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="epm.controllers.AdminController">
+    <children>
+        <Pane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <Pane prefHeight="268.0" prefWidth="1001.0" style="-fx-background-color: #1E3888;" />
+                <Pane layoutY="-2.0" prefHeight="651.0" prefWidth="1003.0">
+                    <children>
+                        <Pane fx:id="loginSeparator" layoutX="2.0" layoutY="267.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="385.0" prefWidth="1002.0">
+                            <children>
+                                <ImageView layoutX="939.0" layoutY="342.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_triangle_24px_9.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="16.0" layoutY="12.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_triangle_24px_9.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="251.0" layoutY="147.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_triangle_24px_9.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="687.0" layoutY="71.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_triangle_24px_9.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="855.0" layoutY="110.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_circle_24px_14.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="748.0" layoutY="232.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_circle_24px_14.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="796.0" layoutY="343.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_circle_24px_14.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="952.0" layoutY="232.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="748.0" layoutY="335.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="807.0" layoutY="41.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="867.0" layoutY="334.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="136.0" layoutY="159.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="807.0" layoutY="255.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="407.0" layoutY="59.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="306.0" layoutY="159.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="28.0" layoutY="111.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="478.0" layoutY="53.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_infinite_24px_9.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="844.0" layoutY="196.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_infinite_24px_9.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="164.0" layoutY="209.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="455.0" layoutY="259.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="479.0" layoutY="150.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="359.0" layoutY="347.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="303.0" layoutY="265.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="612.0" layoutY="172.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_circle_24px_14.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="85.0" layoutY="220.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_circle_24px_14.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="346.0" layoutY="227.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_circle_24px_14.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="598.0" layoutY="336.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_circle_24px_14.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="177.0" layoutY="257.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_infinite_24px_9.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="734.0" layoutY="151.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_infinite_24px_9.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="447.0" layoutY="314.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_infinite_24px_9.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="942.0" layoutY="106.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_infinite_24px_9.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="914.0" layoutY="46.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_triangle_24px_9.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="229.0" layoutY="331.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_triangle_24px_9.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="492.0" layoutY="236.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_triangle_24px_9.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="902.0" layoutY="277.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_circle_24px_14.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="73.0" layoutY="33.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="29.0" layoutY="254.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_infinite_24px_9.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="596.0" layoutY="110.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="612.0" layoutY="251.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="661.0" layoutY="313.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView layoutX="747.0" layoutY="99.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_squiggly_line_24px_21.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <Pane prefHeight="655.0" prefWidth="1001.0">
+                            <children>
+                                <VBox layoutY="201.0" prefHeight="453.0" prefWidth="1002.0">
+                                    <children>
+                                        <HBox alignment="CENTER" prefHeight="201.0" prefWidth="841.0" spacing="45.0">
+                                            <children>
+                                                <JFXButton contentDisplay="TOP" onAction="#onEmployee" opacity="0.95" prefHeight="164.0" prefWidth="142.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10,0,0,1);" text="Employee" textFill="#1e3888">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <ImageView fitHeight="80.0" fitWidth="80.0">
+                                                            <image>
+                                                                <Image url="@../../Images/icons8_user_groups_127px.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </JFXButton>
+                                                <JFXButton contentDisplay="TOP" layoutX="440.0" layoutY="29.0" onAction="#onManageEvent" opacity="0.95" prefHeight="164.0" prefWidth="142.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10,0,0,1);" text="Manage Event" textFill="#1e3888">
+                                                    <font>
+                                                        <Font name="System Bold" size="15.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <ImageView fitHeight="80.0" fitWidth="80.0">
+                                                            <image>
+                                                                <Image url="@../../Images/icons8_schedule_127px.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </JFXButton>
+                                                <JFXButton contentDisplay="TOP" layoutX="534.0" layoutY="29.0" onAction="#onReport" opacity="0.95" prefHeight="164.0" prefWidth="142.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10,0,0,1);" text="Report" textFill="#1e3888">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <ImageView fitHeight="80.0" fitWidth="80.0">
+                                                            <image>
+                                                                <Image url="@../../Images/icons8_report_card_127px.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </JFXButton>
+                                                <JFXButton contentDisplay="TOP" layoutX="627.0" layoutY="29.0" onAction="#onSetSalary" opacity="0.95" prefHeight="164.0" prefWidth="142.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10,0,0,1);" text="Set Salary" textFill="#1e3888">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <ImageView fitHeight="80.0" fitWidth="80.0">
+                                                            <image>
+                                                                <Image url="@../../Images/icons8_cash_in_hand_127px.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </JFXButton>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="201.0" prefWidth="841.0" spacing="45.0">
+                                            <children>
+                                    <JFXButton contentDisplay="TOP" layoutX="253.0" layoutY="29.0" onAction="#onPayslip" opacity="0.95" prefHeight="164.0" prefWidth="142.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10,0,0,1);" text="Payslip" textAlignment="CENTER" textFill="#1e3888" wrapText="true">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                       <graphic>
+                                          <ImageView fitHeight="80.0" fitWidth="80.0">
+                                             <image>
+                                                <Image url="@../../Images/icons8_purchase_order_127px.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                                <JFXButton contentDisplay="TOP" onAction="#onBonus" opacity="0.95" prefHeight="164.0" prefWidth="142.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10,0,0,1);" text="Bonus" textAlignment="CENTER" textFill="#1e3888" wrapText="true">
+                                                    <font>
+                                                        <Font name="System Bold" size="17.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <ImageView fitHeight="80.0" fitWidth="80.0">
+                                                            <image>
+                                                                <Image url="@../../Images/icons8_gift_127px.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </JFXButton>
+                                                <JFXButton contentDisplay="TOP" layoutX="440.0" layoutY="29.0" onAction="#onChangePass" opacity="0.95" prefHeight="164.0" prefWidth="142.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10,0,0,1);" text="Change Pass" textFill="#1e3888">
+                                                    <font>
+                                                        <Font name="System Bold" size="16.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <ImageView fitHeight="80.0" fitWidth="80.0">
+                                                            <image>
+                                                                <Image url="@../../Images/icons8_key_2_127px.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </JFXButton>
+                                                <JFXButton contentDisplay="TOP" layoutX="534.0" layoutY="29.0" onAction="#onSignOut" opacity="0.95" prefHeight="164.0" prefWidth="142.0" style="-fx-background-color: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10,0,0,1);" text="Sign Out" textFill="#1e3888">
+                                                    <font>
+                                                        <Font name="System Bold" size="18.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <ImageView fitHeight="80.0" fitWidth="80.0">
+                                                            <image>
+                                                                <Image url="@../../Images/icons8_sign_out_127px.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </JFXButton>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <Label layoutX="235.0" layoutY="39.0" prefHeight="48.0" prefWidth="138.0" text="SMART" textFill="#6fc1ff">
+                                    <font>
+                                        <Font name="System Bold" size="28.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="103.0" layoutY="38.0" prefHeight="50.0" prefWidth="138.0" text="Manage" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="28.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="59.0" layoutY="80.0" prefHeight="108.0" prefWidth="424.0" text="Leading cloud based employer management software for corporation" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </Label>
+                                <JFXButton fx:id="eventButton" layoutX="789.0" layoutY="31.0" onAction="#showEvent" prefHeight="39.0" prefWidth="180.0" style="-fx-background-color: lightgreen; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10,0,0,1);" text="Upcoming Event" textFill="WHITE" />
+                                <Circle fx:id="btnExit" fill="#fc0000" layoutX="22.0" layoutY="22.0" onMouseClicked="#handleMouseEvent" radius="8.0" stroke="WHITE" strokeType="INSIDE" />
+                                <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="33.0" layoutY="26.0">
+                                    <image>
+                                        <Image url="@../../Images/icons8_fingerprint_127px_2.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+    </children>
+</StackPane>

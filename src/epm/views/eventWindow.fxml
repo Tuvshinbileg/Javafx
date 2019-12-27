@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="epm.controllers.EventController">
+    <children>
+        <Pane prefHeight="100.0" prefWidth="450.0" style="-fx-background-color: lightgreen;">
+            <children>
+                <Label layoutX="151.0" layoutY="29.0" prefHeight="42.0" prefWidth="181.0" text="UPCOMING EVENT" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="50.0" fitWidth="66.0" layoutX="80.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/icons8_schedule_127px_1.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="closeEvent" fitHeight="25.0" fitWidth="25.0" layoutX="416.0" layoutY="10.0" onMouseClicked="#onCloseEvent" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/icons8_close_window_127px.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <ScrollPane prefHeight="402.0" prefWidth="450.0">
+            <content>
+                <VBox fx:id="bodyVbox" prefHeight="489.0" prefWidth="448.0" spacing="30.0">
+               <padding>
+                  <Insets left="40.0" top="10.0" />
+               </padding>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</VBox>
